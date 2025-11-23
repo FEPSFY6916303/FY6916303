@@ -51,7 +51,6 @@ p.ex1 {
 
   <!table of contents>
     <table>
-
     <tr>
      <th><h3>Table of contents</h3></th>
     </tr>
@@ -61,14 +60,24 @@ p.ex1 {
   <tr>
     <td><a href="#Introduction">Introduction</td>
   </tr>
+  <tr>
+    <td><a href="#First paragraph">First paragraph</td>
+  </tr>
+  <tr>
+    <td><a href="#Second paragraph">Second paragraph</td>
+  </tr>
+  <tr>
+    <td><a href="#Third paragraph">Third paragraph</td>
+  </tr>
+  <tr>
+    <td><a href="#Conclusion">Conclusion</td>
+  </tr>
 <tr>
   <td><a href="#Analysis and discussion">Analysis and discussion</td>
 </tr>
-
   <tr>
     <td><a href="#References">References</td>
   </tr>
-
 </table>
   
   <hr>
@@ -81,12 +90,14 @@ p.ex1 {
     Each game carries its own appeal which varies upon preference and whether it is conventional to Earth or not but collectively, when we click the download button, we carry expectations for how we believe the game should function. But there’s more to consider – developers don’t just provide players these unique experiences with ease. Many trials and components have been considered before launching the well-known titles players know and love today, with physics playing a key role.
   </p>
 
+  
   <h3 id="Introduction">Introduction</h3>
   <p class="ex1">
     <p>
       Physics engines are software developed by physicists for game developers, using math and logic to replicate real-world physical behaviour like collisions, movement and trajectory. Utilising real-world effects such as ragdoll physics and forces, game developers have been able to simulate various scenarios for players, propelling the industry to greater heights. The realism of video games has intensified over the years, with developers creating more immersive and dynamic worlds without having to code from scratch. But how exactly has this managed to come into fruition?
     </p>
 
+  
   <h3 id="First paragraph">First paragraph</h3>
   <p class="ex1">
     <p>
@@ -96,6 +107,7 @@ p.ex1 {
     Computer games follow similar processes for each interaction. Chris Hecker (2000) proposes four simple stages for displaying basic physical operations: contact detection, contact resolution, force computation and state integration. Contact detection, otherwise known as collision detection, determines when and how objects in an environment come into contact. Contact resolution is the process by which the physics engine decides the corresponding behaviour for all objects involved in the contact detection stage. Should they bounce back from one another? Should one object pass right through the other? To what degree are the objects affected by the collision? Force computation uses calculations to find the magnitude of the forces affecting the objects. Relevant physical variables are considered at this stage, such as velocity and momentum. Hecker also considers the interaction of force computation with collision detection, whereby objects exert a force on one another to prevent interpenetration when necessary. Finally, state integration implements the calculated forces acting on all the objects involved, rendering the finalised reaction on to the screen via the game’s graphics subsystem .
   </p>
 
+  
   <h3 id="Second paragraph">Second paragraph</h3>
   <p>
     The addition of a third dimension in video games has come with its trials – namely the issue of consistency. Sincell (1999) presents the idea that systems contain a series of predetermined causes and effects which occur with any given interaction. However, if an interaction exists outside these allowed possibilities, it will not happen at all. Interactions the player has with the environment have evolved since prerecorded animations which were commonly used in 2D games. Therefore, physics engines are unable to predict every possible collision down to the pixel, which often causes errors as many events are unforeseen in code.
@@ -113,6 +125,7 @@ The use of hitboxes has allowed video games to execute enhanced dynamic interact
     For instance, Street Fighter V simulates ‘strike’ (offensive) hitboxes in red, as shown in the figure above. Hurtboxes are displayed in yellow and change shape depending on the character’s animation. Finally, the blue boxes represent physical positioning and detect contact. These are always active.
   </p>
 
+  
   <h3 id="Third paragraph">Third paragraph</h3>
   <p>
     Many factors influence how seamlessly a game appears onscreen. A foundational example is simulation frequency. Simply put, this is how often a game or system updates the condition of objects per second, measured in hertz (Hz). The game engine observes these internal states  and consequently updates them every ‘simulation tick’, making them crucial for physics accuracy, performance and consistency. A higher frequency leads to smoother, more precise physics, but also increases the load on the GPU/CPU. 
@@ -123,6 +136,7 @@ The use of hitboxes has allowed video games to execute enhanced dynamic interact
   <p>
     Unity is a game engine released in 2005, popular for its beginner-friendly architecture. One in a series of five articles, “Enhanced physics performance for smooth gameplay” (Unity, no date), unpacks the situation in which performance issues may occur due to abnormal frame preparation times. To avoid this issue, the article instructs users to decrease the ‘maximum allowed timestep ’. This limits the frequency of physics updates to implement smoother frames, at the cost of physics simulation accuracy. 
   </p>
+
   
 <h3 id="Conclusion">Conclusion</h3>
   <p>
@@ -172,6 +186,7 @@ Unity (no date) ‘Enhanced physics performance for smooth gameplay’. Availabl
     </pre>
   </p>
 
+  
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
