@@ -35,7 +35,7 @@
 
   <style>
 p.ex1 {
-  color: blue;
+  color: green;
   font-size: 20px;
   text-align: center;
 }
@@ -106,37 +106,37 @@ p.ex1 {
 
   
   <h3 id="Second paragraph">Second paragraph</h3>
-  <p>
+  <p class="ex1" id="Secondparagraph">
     The addition of a third dimension in video games has come with its trials – namely the issue of consistency. Sincell (1999) presents the idea that systems contain a series of predetermined causes and effects which occur with any given interaction. However, if an interaction exists outside these allowed possibilities, it will not happen at all. Interactions the player has with the environment have evolved since prerecorded animations which were commonly used in 2D games. Therefore, physics engines are unable to predict every possible collision down to the pixel, which often causes errors as many events are unforeseen in code.
-  </p>
-  <p>
+  <br>
+    <br>
     Complex objects within a simulation aren’t modelled wholly but are broken down into invisible geometric shapes such as spheres, rectangles or another complex polygon. More often known as ‘hitboxes’, these shapes register collisions between objects, which then triggers a response from the game engine and accordingly - the physics engine. The process is as follows: In a frame, once an overlap or collision is detected between a hitbox and a ‘hurtbox’ (the designated area that registers a hit), an event is triggered, which causes the physics engine to apply the general process mentioned above. 
-  </p>
-  <p>
+  <br>
+    <br>
 The use of hitboxes has allowed video games to execute enhanced dynamic interactions. However, considerations must be made as the use of complex hitboxes comes at the cost of hardware resources. Therefore, developers must find a stable balance between performance and realism.
-  </p>
-  <p>
+  <br>
+    <br>
     Wiltshire (2000) comments on hitboxes existing simultaneously in space and time, creating a reaction which can be anticipated. Understanding hitboxes allows players to master the characteristics of physical laws of objects within a simulation. Hitbox implementation is, however, non-universal and varies between games.
-  </p>
-  <p>
+  <br>
+    <br>
     For instance, Street Fighter V simulates ‘strike’ (offensive) hitboxes in red, as shown in the figure above. Hurtboxes are displayed in yellow and change shape depending on the character’s animation. Finally, the blue boxes represent physical positioning and detect contact. These are always active.
   </p>
 
   
   <h3 id="Third paragraph">Third paragraph</h3>
-  <p>
+  <p class="ex1" id="Thirdparagraph">
     Many factors influence how seamlessly a game appears onscreen. A foundational example is simulation frequency. Simply put, this is how often a game or system updates the condition of objects per second, measured in hertz (Hz). The game engine observes these internal states  and consequently updates them every ‘simulation tick’, making them crucial for physics accuracy, performance and consistency. A higher frequency leads to smoother, more precise physics, but also increases the load on the GPU/CPU. 
-  </p>
-  <p>
+  <br>
+    <br>
     There are 2 types of simulation frequency: fixed and variable. Fixed frequency updates at a constant rate whereas variable frequency updates based on the time elapsed since the last frame. Whilst fixed frequencies enable predictable and stable physics to run across games, updates may be skipped if the system lags. Conversely whilst variable frequencies adapt to performance, it can also cause an instability in game physics.
-  </p>
-  <p>
+  <br>
+    <br>
     Unity is a game engine released in 2005, popular for its beginner-friendly architecture. One in a series of five articles, “Enhanced physics performance for smooth gameplay” (Unity, no date), unpacks the situation in which performance issues may occur due to abnormal frame preparation times. To avoid this issue, the article instructs users to decrease the ‘maximum allowed timestep ’. This limits the frequency of physics updates to implement smoother frames, at the cost of physics simulation accuracy. 
   </p>
 
   
 <h3 id="Conclusion">Conclusion</h3>
-  <p>
+  <p class="ex1" id="Conclusion">
     These are fragments of the operations that take place in the creation of video games. Many flaws still present themselves in production, however perfection is subjective. A perfect physics engine does not exist, but many developers continually improve year by year. Physics engines thrive in different aspects of creation, whether it’s balancing the computational limits of hardware, managing real-time constraints or balancing fun and performance with realism. As gaming technology evolves and developers master the components of engines, I believe they will create experiences which go above and beyond expectations that feel intuitive, immersive and fair to players.
   </p>
   
@@ -224,8 +224,11 @@ The use of hitboxes has allowed video games to execute enhanced dynamic interact
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const FPCount = displayWordCount("Firstparagraph");
+    const SPCount = displayWordCount("Secondparagraph");
+    const TPCount = displayWordCount("Thirdparagraph");
+    const ConclusionCount = displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + FPCount;
+    const totalWordCount = IntroductionCount + FPCount + SPCount + TPCount + Conclusion;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
