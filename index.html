@@ -89,18 +89,15 @@ p.ex1 {
 
   
   <h3 id="Introduction">Introduction</h3>
-  <p class="ex1">
-    <p>
+  <p class="ex1" id="Introduction_InText">
       Physics engines are software developed by physicists for game developers, using math and logic to replicate real-world physical behaviour like collisions, movement and trajectory. Utilising real-world effects such as ragdoll physics and forces, game developers have been able to simulate various scenarios for players, propelling the industry to greater heights. The realism of video games has intensified over the years, with developers creating more immersive and dynamic worlds without having to code from scratch. But how exactly has this managed to come into fruition?
     </p>
 
   
   <h3 id="First paragraph">First paragraph</h3>
-  <p class="ex1">
-    <p>
+  <p class="ex1" id="Firstparagraph">
       When two objects in a video game collide, a certain reaction is elicited. This could be something as mediocre as a player bumping into the wall of a castle, meaning they are restricted from moving any further, or an enemy suffering from burning effects once struck by a fire spell. How does your game manage to seamlessly display these interactions without the player giving it a second thought? 
-    </p>
-  <p>
+    
     Computer games follow similar processes for each interaction. Chris Hecker (2000) proposes four simple stages for displaying basic physical operations: contact detection, contact resolution, force computation and state integration. Contact detection, otherwise known as collision detection, determines when and how objects in an environment come into contact. Contact resolution is the process by which the physics engine decides the corresponding behaviour for all objects involved in the contact detection stage. Should they bounce back from one another? Should one object pass right through the other? To what degree are the objects affected by the collision? Force computation uses calculations to find the magnitude of the forces affecting the objects. Relevant physical variables are considered at this stage, such as velocity and momentum. Hecker also considers the interaction of force computation with collision detection, whereby objects exert a force on one another to prevent interpenetration when necessary. Finally, state integration implements the calculated forces acting on all the objects involved, rendering the finalised reaction on to the screen via the game’s graphics subsystem .
   </p>
 
@@ -223,9 +220,9 @@ The use of hitboxes has allowed video games to execute enhanced dynamic interact
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const FPCount = displayWordCount("First paragraph_InText");
+    const FPCount = displayWordCount("Firstparagraph");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + FPCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
